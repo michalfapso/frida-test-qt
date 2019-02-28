@@ -1,0 +1,12 @@
+#ifndef QT_HELPER_LIB_GLOBAL_H
+#define QT_HELPER_LIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(QT_HELPER_LIB_LIBRARY)
+#  define QT_HELPER_LIBSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define QT_HELPER_LIBSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QT_HELPER_LIB_GLOBAL_H
