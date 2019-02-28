@@ -6,8 +6,12 @@ CONFIG -= app_bundle
 QMAKE_CXXFLAGS += -g
 QMAKE_LFLAGS   += -g
 
-#LIBS += -L../qt_helper_lib -lqt_helper_lib
-#INCLUDEPATH += ../qt_helper_lib
+#	win32 {
+#		LIBS += -L../qt_helper_lib/release -lqt_helper_lib
+#	} else {
+#		LIBS += -L../qt_helper_lib -lqt_helper_lib
+#	}
+#	INCLUDEPATH += ../qt_helper_lib
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
